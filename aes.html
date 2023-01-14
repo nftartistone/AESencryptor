@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AES Encryption/Decryption</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>AES Encryption/Decryption</h1>
+    <div id="encryption-form">
+      <h2>Encryption</h2>
+      <textarea id="plaintext"></textarea>
+      <input type="text" id="password" placeholder="Password">
+      <button onclick="encrypt()">Encrypt</button>
+      <textarea id="ciphertext"></textarea>
+    </div>
+    <div id="decryption-form">
+      <h2>Decryption</h2>
+      <textarea id="ciphertext-dec"></textarea>
+      <input type="text" id="password-dec" placeholder="Password">
+      <button onclick="decrypt()">Decrypt</button>
+      <textarea id="plaintext-dec"></textarea>
+    </div>
+	<script src="https://unpkg.com/crypto-js@4.0.0/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
